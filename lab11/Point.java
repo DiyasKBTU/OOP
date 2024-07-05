@@ -19,10 +19,28 @@ class Point implements Comparable<Point> {
     }
 
     public int compareTo(Point other) {
-        if (this.x == other.x) {
-            return Integer.compare(this.y, other.y);
-        }
-        return Integer.compare(this.x, other.x);
+        if(this.x == other.x) {
+    		if(this.y > other.y) {
+    			return 1;
+    		}
+    		else if(this.y == other.y) {
+    			return 0;
+    		}
+    		else {
+    			return -1;
+    		}
+    	}
+    	else {
+    		if(this.x > other.x) {
+    			return 1;
+    		}
+    		else if(this.x == other.x) {
+    			return 0;
+    		}
+    		else {
+    			return -1;
+    		}
+    	}
     }
 
     public String toString() {
