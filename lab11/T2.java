@@ -15,8 +15,10 @@ public class T2 {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Integer[] arr = {5, 2, 1, 3, 6, 4};
+		
+		int max = max(arr);
+		System.out.println(max);
 	}
 
 }
