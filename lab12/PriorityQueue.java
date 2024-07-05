@@ -36,29 +36,7 @@ public class PriorityQueue<E extends Comparable<E>> {
     public int getSize() {
         return queue.size();
     }
-
-    public E peek() {
-        if (queue.isEmpty()) {
-            return null;
-        }
-        return queue.get(0);
-    }
-
-    public boolean isEmpty() {
-        return queue.isEmpty();
-    }
-
-    public void clear() {
-        queue.clear();
-    }
-
-    public void printQueue() {
-        for (E element : queue) {
-            System.out.print(element + " ");
-        }
-        System.out.println();
-    }
-
+    
     private int compare(E a, E b) {
         if (comparator != null) {
             return comparator.compare(a, b);
