@@ -11,14 +11,17 @@ public class T1 {
 	}
 	
 	public static void main(String[] args) {
-		Integer[] intArray = {1, 2, 3, 4, 5};
-        String[] strArray = {"apple", "banana", "cherry"};
+		Integer[] arr = {1, 2, 3, 4, 5};
 
-        int intIndex = linearSearch(intArray, 3);
-        System.out.println("Index of 3 in intArray: " + intIndex);
-        int strIndex = linearSearch(strArray, "banana");
-        System.out.println("Index of 'banana' in strArray: " + strIndex);
-
+        	int key = linearSearch(arr, 5);
+        	if(key == -1) {
+        		System.out.println("This is not exist!");
+        	}
+        	else {
+        		System.out.println(key);
+        	}
+        	
+        	
 	}
 
 }
