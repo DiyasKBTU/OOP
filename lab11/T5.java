@@ -15,13 +15,15 @@ public class T5 {
             int y = random.nextInt(100);
             points[i] = new Point(x, y);
         }
-
-        Arrays.sort(points);
-
         for (Point point : points) {
             System.out.println(point);
         }
-
+        System.out.println("------------------");
+        Arrays.sort(points);
+        for (Point point : points) {
+            System.out.println(point);
+        }
+        System.out.println("------------------");
         Arrays.sort(points, new CompareY());
 
         for (Point point : points) {
