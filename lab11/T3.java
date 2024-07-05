@@ -15,7 +15,7 @@ public class T3 {
                 max = element;
             }
         }
-             return max;
+        return max;
 	}
 	
 	public static void main(String[] args) {
